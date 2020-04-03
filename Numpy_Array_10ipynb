@@ -1,0 +1,67 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMxJ6vYlBP0ojaqrjYzs28Q",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Serin-Yoon/deeplearning-for-everyone/blob/master/Numpy_Array_10ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "pbcLhyAduZRY",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 184
+        },
+        "outputId": "5b4c0aec-aed2-4c66-d75d-fac2ddb67490"
+      },
+      "source": [
+        "import numpy as np\n",
+        "x = np.ones((3,3))\n",
+        "print(\"Checkerboard pattern:\")\n",
+        "x = np.zeros((8,8),dtype=int)\n",
+        "x[1::2,::2] = 1\n",
+        "x[::2,1::2] = 1\n",
+        "print(x)"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Checkerboard pattern:\n",
+            "[[0 1 0 1 0 1 0 1]\n",
+            " [1 0 1 0 1 0 1 0]\n",
+            " [0 1 0 1 0 1 0 1]\n",
+            " [1 0 1 0 1 0 1 0]\n",
+            " [0 1 0 1 0 1 0 1]\n",
+            " [1 0 1 0 1 0 1 0]\n",
+            " [0 1 0 1 0 1 0 1]\n",
+            " [1 0 1 0 1 0 1 0]]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
